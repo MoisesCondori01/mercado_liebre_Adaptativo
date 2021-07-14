@@ -1,0 +1,158 @@
+
+.home{
+    background-color: #ebebeb;
+}
+.home header{
+    background-color: var(--color-amarillo);
+    padding: 10px 0 5px 0;
+}
+/*search*/
+.home img#img-logo{
+    width: 150px;
+    margin: 30px;/*era 30*/
+}
+
+.home input{
+    display: inline;/*lupa debajo de placeholder*/
+    color: var(--color-gris-claro);/*placeholder*/
+}
+.home #input{/*margen de  placeholder 20 px a la izquierda*/
+    margin-left: 20px;
+}
+/*promo*/
+.home #promo{
+    text-align:center;
+    margin:15px 0;
+    font-weight: 800;/*grosor de texto*/
+}
+/*menu*/
+.home nav ul{
+    margin-bottom: 20px;
+}
+.home nav li{
+    list-style: none;
+}
+.home nav li a{
+    color: black;
+    font-weight: 600;
+}
+.home .burger-menu{
+    text-align: center;
+    display: block;
+}
+.home .burger-menu i{
+    width: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: var(--color-celeste);
+    border-radius: 5px;
+}
+.home h3{
+    font-size: 24px;
+}
+.home p{
+    font-size: 12px;
+}
+.home .precio{
+    font-size: 18px;
+}
+.home .descuentos{
+    font-size: 16px;
+    color: var(--color-verde);
+}
+.home main .detail-product h4{
+    font-size: 16px;
+}
+.home article i{
+    color: var(--color-verde);
+    padding: 10px;
+   
+    border:1px solid var(--color-verde);
+    border-radius: 50%;
+
+}
+/*footer*/
+.home footer article{
+    text-align: center;
+    margin: 30px;
+    color:var(--color-azul);
+}
+.home footer p{
+    color:var(--color-azul);
+}
+.home footer article i{
+    color: var(--color-celeste);
+    width: 2em;
+    margin-bottom: 10px;
+}
+
+/*---------diseño adaptativo----------------*/
+/*Debemos centrar la sección main y que ocupe un 90% del ancho de la pantalla.*/
+.home main{
+    margin:5% ;/*centro imagen*/
+    width: 90%;/*define ancho*/
+}
+/*Entre cada artículo hay una separación de 10 píxeles.*/
+.home main article{
+    margin-bottom: 10px;
+    background-color: white;
+}
+/*Nos piden que manejemos el logo del envío, el precio, el porcentaje de descuento
+y la descripción del artículo como elementos de una caja dentro de la caja general
+del artículo.
+● Nos piden que la misma tenga un borde superior de 1 píxel, línea sólida y color
+#ebebeb.
+● Debe tener separado el contenido de sus bordes en 15 píxeles en cada uno de sus
+lados.*/
+.home main article .detail-product{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+/* ocultar logi ,site y descripcion de producto*/
+.home main .detail-product h4{
+    display: none;
+}
+.home nav ul{
+    display: none;
+}
+
+/*---------------------Tablet------------------------------*/
+/*Para las versiones desktop y tablet mostrar el site y login navbar, pero ocultar
+     la imagen del menú hamburguesa.*/
+    
+@media (min-width:361px) {
+  /*Mostrar login ,site y descripcion de producto*/  
+  .home main .detail-product h4{
+    display: block;
+} 
+.home nav ul{
+    display: block;
+}
+.home .burger-menu i{
+   
+    display: none;
+}
+/*products*/
+.home main article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+}
+
+@media (min-width:769px) {
+     /*Mostrar login ,site y descripcion de producto*/  
+  .home main .detail-product h4{
+    display: block;
+} 
+.home nav ul{
+    display: block;
+}
+.home .burger-menu i{
+   
+    display: none;
+}
+/*products*/
+.home main article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+}
